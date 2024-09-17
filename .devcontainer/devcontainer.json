@@ -1,0 +1,15 @@
+{
+    "name": "PocketPy: HTTP request from WASM",
+    "image": "ubuntu:jammy",
+    "features": {
+        "ghcr.io/ebaskoro/devcontainer-features/emscripten:1": {},
+        "ghcr.io/devcontainers/features/common-utils": {}
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.cpptools-extension-pack"
+            ]
+        }
+    }
+}
