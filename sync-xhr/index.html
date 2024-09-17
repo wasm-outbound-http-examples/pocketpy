@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTTP request for PocketPy</title>
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+<h2>HTTP Request from inside WASM using PocketPy and EMSCRIPTEN_FETCH_SYNCHRONOUS</h2>
+
+<p>This example uses custom PocketPy module function implemented using
+    <code><a href="https://emscripten.org/docs/api_reference/fetch.html#synchronous-fetches">emscripten_fetch()</a></code>
+     in synchronous mode.</p>
+<p>See the output in browser developer console.</p>
+
+<p>Actual code:</p>
+<pre>
+
+import http
+
+print(http.get('https://httpbin.org/anything'))
+
+</pre>
+<section>
+    <h4>Info</h4>
+    <ul>
+        <li><a href="https://github.com/wasm-outbound-http-examples/pocketpy/tree/main/browser-sync-xhr/">Demo source code</a></li>
+        <li>Versions used on the moment of build:<small>
+            PocketPy: <a href="https://github.com/pocketpy/pocketpy/releases/tag/v2.0.0">v2.0.0</a>,
+            Emscripten: <a href="https://github.com/emscripten-core/emscripten/tree/3.1.67">v3.1.67</a>.
+        </small></li>
+    </ul>
+</section>
+<footer><small>Created for (wannabe-awesome) <a href="https://github.com/vasilev/HTTP-request-from-inside-WASM">list</a></small></footer>
+</body>
+</html>
